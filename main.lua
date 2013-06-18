@@ -1,3 +1,5 @@
+--Basic pong love2d tutorial
+
 local player_x=0
 local player_y=0
 local cpu_x=0
