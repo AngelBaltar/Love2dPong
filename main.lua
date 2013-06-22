@@ -65,12 +65,12 @@ function love.update(dt)
   --implement cpu movement
   if math.abs(cpu_y-ball_y)>0 then
     if cpu_y>ball_y then
-      if cpu_y+step < 600 then 
+      if cpu_y-step > 0 then 
         cpu_y=cpu_y-step
         delta_y_cpu=-0.5
       end
     else
-      if cpu_y-step>0 then
+      if cpu_y+step<600 then
         cpu_y=cpu_y+step
         delta_y_cpu=0.5
       end
