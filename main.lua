@@ -63,7 +63,7 @@ function love.update(dt)
   end
   
   --implement cpu movement
-  if math.abs(cpu_y+rectangleh/2-ball_y)>0 then
+  if math.abs(cpu_y-ball_y)>0 then
     if cpu_y>ball_y then
       if cpu_y+step < 600 then 
         cpu_y=cpu_y-step
