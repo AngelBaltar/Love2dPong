@@ -31,7 +31,7 @@ end
 
 
 function love.update(dt)
-  local step=2
+  local step=200*dt
   local x_contained=false
   local y_contained=false
   local x1A=0
